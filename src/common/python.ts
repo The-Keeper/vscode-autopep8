@@ -7,11 +7,11 @@ import { traceError, traceLog } from './logging';
 
 type Environment = EnvironmentPath & {
     /**
-     * Carries details about python executable.
+     * Carries details about Python executable.
      */
     readonly executable: {
         /**
-         * Uri of the python interpreter/executable. Carries `undefined` in case an executable does not belong to
+         * Uri of the Python interpreter/executable. Carries `undefined` in case an executable does not belong to
          * the environment.
          */
         readonly uri: Uri | undefined;
@@ -72,11 +72,11 @@ type Environment = EnvironmentPath & {
  */
 type ResolvedEnvironment = Environment & {
     /**
-     * Carries complete details about python executable.
+     * Carries complete details about Python executable.
      */
     readonly executable: {
         /**
-         * Uri of the python interpreter/executable. Carries `undefined` in case an executable does not belong to
+         * Uri of the Python interpreter/executable. Carries `undefined` in case an executable does not belong to
          * the environment.
          */
         readonly uri: Uri | undefined;

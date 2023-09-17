@@ -86,7 +86,7 @@ def formatting(params: lsp.DocumentFormattingParams) -> list[lsp.TextEdit] | Non
 
 
 def is_python(code: str) -> bool:
-    """Ensures that the code provided is python."""
+    """Ensures that the code provided is Python."""
     try:
         ast.parse(code)
     except SyntaxError:
@@ -366,7 +366,7 @@ def _run_tool_on_document(
         return None
 
     if not is_python(document.source):
-        log_warning(f"Skipping non python code: {document.path}")
+        log_warning(f"Skipping non-Python code: {document.path}")
         return None
 
     # deep copy here to prevent accidentally updating global settings.
